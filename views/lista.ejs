@@ -1,0 +1,10 @@
+{
+  lista: [ <% list.forEach(function(item) { %>'<%= item %>', <% }); %> ],
+
+  listaObjetos: [ { <% objectList.forEach(function(item) { %>
+    a: '<%= item.a %>',
+    b: '<%= item.b %>',
+    c: '<%= item.c %>',<% }); %>
+    },
+  ]
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+
+    <ul>
+      <% list.forEach(function(item) { %>
+      <li><%= item %></li>
+      <% }); %>
+    </ul>
+
+    <hr>
+
+    <ul>
+      <% objectList.forEach(function(item) { %>
+      <li><%= item.a %></li>
+      <li><%= item.b %></li>
+      <li><%= item.c %></li>
+      <% }); %>
+    </ul>
+  </body>
+</html>
